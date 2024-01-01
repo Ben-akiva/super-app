@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: install 
-      run:  docker-compose -d up
+      run:  docker-compose up -d
 
   Test:
     needs: Build
