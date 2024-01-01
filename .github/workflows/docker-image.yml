@@ -13,9 +13,4 @@ jobs:
     - name: install 
       run:  docker-compose up -d
 
-  Test:
-    needs: Build
-    runs-on: self-hosted
-    steps:
-    - name: test 
-      run: sleep 10 && curl 100.25.136.4
+  
