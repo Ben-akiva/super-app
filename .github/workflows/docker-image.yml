@@ -20,6 +20,7 @@ jobs:
     - name: test 
       run: sleep 10 && curl 52.91.154.185
       
+      
   Package:
    needs: Test
    runs-on: self-hosted
@@ -29,7 +30,8 @@ jobs:
      with:
       username: ${{ secrets.DOCKERHUB_USERNAME }}
       password: ${{ secrets.DOCKERHUB_TOKEN }}
-      run: docker push benakiva/super-app_php-app
+   - name: push
+     run: docker push benakiva/super-app_php-app
 
 
   
