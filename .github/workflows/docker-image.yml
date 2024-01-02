@@ -29,7 +29,23 @@ jobs:
      with:
       username: ${{ secrets.DOCKERHUB_USERNAME }}
       password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+
+  push:
+    needs: Package
+    runs-on: self-hosted
+    steps:
+    - name: phus to dockerhup 
       run: docker push benakiva/super-app_php-app
+
+      
+ 
+
+ 
+
+ 
+  
+
 
   
     
