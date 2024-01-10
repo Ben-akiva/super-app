@@ -3,6 +3,6 @@ os: linux
 hooks:
   - source: /docker-compose.yml
     destination: /home/ec2-user/
-     timeout: 300
-      runas: root
+    timeout: 300
+    runas: root
  
