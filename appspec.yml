@@ -1,6 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /docker-compose.yml
+  - source: /docker-compose.yaml
     destination: /home/ec2-user/
-  
+  - source: /nginx.conf
+    destination: /home/ec2-user/
