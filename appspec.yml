@@ -3,5 +3,4 @@ os: linux
 files:
   - source: /docker-compose.yml
     destination: /home/ec2-user/
-  - source: /nginx.conf
-    destination: /home/ec2-user/
+ 
