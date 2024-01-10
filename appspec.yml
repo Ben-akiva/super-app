@@ -1,8 +1,6 @@
 version: 0.0
 os: linux
-hooks:
+files:
   - source: /docker-compose.yml
     destination: /home/ec2-user/
-    timeout: 300
     runas: root
- 
