@@ -7,4 +7,4 @@ WORKDIR /var/www/html
 # Copy everything
 COPY . .
 
-EXPOSE 80
+EXPOSE 80 .
