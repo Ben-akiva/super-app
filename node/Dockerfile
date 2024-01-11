@@ -18,4 +18,4 @@ COPY . .
 CMD ["node", "server.js"]
 
 # Expose the service over PORT 3000
-EXPOSE 3000 .
+EXPOSE 3000 
